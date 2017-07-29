@@ -99,30 +99,35 @@
 }
 
 .showcaser-button {
-    background: 0 0;
+    background: transparent;
     border: none;
     border-radius: 2px;
     color: #fff;
     position: relative;
-    height: 2.25em;
-    line-height: 2.25em;
+    height: 36px;
+    line-height: 36px;
     margin: 0;
-    min-width: 4em;
-    padding: 0 1em;
+    min-width: 64px;
+    padding: 0 16px;
     display: inline-block;
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0;
+    letter-spacing: .04em;
     overflow: hidden;
     will-change: box-shadow;
-    transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+    transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1),
+        background-color .2s cubic-bezier(.4, 0, .2, 1),
+        color .2s cubic-bezier(.4, 0, .2, 1);
     outline: none;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
     vertical-align: middle;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-appearance: none;
 }
 
 .showcaser-button:hover {
@@ -140,13 +145,11 @@
 .showcaser-skip {
     color: white;
     cursor: pointer;
-    left: 100%;
-    bottom: 0.3em;
-    margin-left: 2em;
+    margin-left: 28px;
     white-space: nowrap;
     line-height: 1.5;
     display: inline;
-    font-size: 0.9em;
+    font-size: 12px;
     vertical-align: middle;
 }
 
